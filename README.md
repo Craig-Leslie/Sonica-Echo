@@ -1,11 +1,11 @@
 # Sonica-Echo
 
 Team Members:
-Craig Leslie
-Matthew Holmes
-William Drummond
-Clover Sey
-Happiness Ada Lazarus
+  - Craig Leslie
+  - Matthew Holmes
+  - William Drummond
+  - Clover Sey
+  - Happiness Ada Lazarus
 
 
 Project Description:
