@@ -1,0 +1,85 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>External Contacts</title>
+    <link rel="stylesheet" type="text/css" href="C:\Users\HAPPINESS LAZARUS\Desktop\Mental health project\Rgu Echo\Rgu Echo\assets\css\External.css">
+</head>
+<body>
+    <div class="container">
+        
+        
+        <div class="alert">
+            <h3>Emergency</h3>
+            <p>If you are in an emergency situation, please call one of the emergency numbers.</p>
+            <button class="btn btn-red">Emergency</button>
+        </div>
+        
+        <div class="form-group">
+            <h2>Where are you based?</h2>
+            <select id="country">
+                <option value="">Select country</option>
+                <option value="us">United States</option>
+                <option value="uk">UK</option>
+                <option value="sa">South Africa</option>
+                <option value="nz">New Zealand</option>
+                <option value="ph">Philippines</option>
+                <option value="ie">Ireland</option>
+                <option value="au">Australia</option>
+                <option value="ca">Canada</option>
+                <option value="in">India</option>
+            </select>
+        </div>
+        
+        <div class="form-group">
+            <h2>How can we help you?</h2>
+            <select id="theme">
+                <option value="">Select theme</option>
+                <option value="abuse">Abuse and domestic violence</option>
+                <option value="addiction">Addiction</option>
+                <option value="adhd">ADHD</option>
+                <option value="alzheimers">Alzheimer's and dementia</option>
+                <option value="autism">Autism</option>
+                <option value="bullying">Bullying</option>
+                <option value="caregiving">Caregiving</option>
+                <option value="eating">Eating disorders</option>
+                <option value="grief">Grief and loss</option>
+                <option value="lgbtq">LGBTQ+</option>
+                <option value="mental">Mental health</option>
+                <option value="parenting">Parenting</option>
+                <option value="selfharm">Self-harm</option>
+                <option value="sleep">Sleep</option>
+                <option value="teens">Teens</option>
+                <option value="veterans">Veterans</option>
+                <option Value="Sucide">Sucide</option>
+            </select>
+        </div>
+        
+        <div class="form-group">
+            <button class="btn" onclick="resetFilters()">Reset</button>
+            <button class="btn btn-green" onclick="applyFilters()">Apply</button>
+        </div>
+
+    <script>
+        function resetFilters() {
+            document.getElementById('country').value = '';
+            document.getElementById('theme').value = '';
+        }
+
+        function applyFilters() {
+            const country = document.getElementById('country').value;
+            const theme = document.getElementById('theme').value;
+            console.log('Filters applied:', { country, theme });
+            // Here you would typically fetch and display relevant helplines
+        }
+
+        function search() {
+            const searchTerm = document.getElementById('search').value;
+            console.log('Searching for:', searchTerm);
+            // Here you would typically perform a search and display results
+        }
+    </script>
+</body>
+</html> 
