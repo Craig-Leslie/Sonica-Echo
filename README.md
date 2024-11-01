@@ -5,6 +5,7 @@ Team Members:
   - Matthew Holmes
   - William Drummond
   - Clover Sey
+  - Stuart Keith
   - Happiness Ada Lazarus
 
 
