@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>GP Note Form</title>
+</head>
+<body style="font-family: 'Times New Roman'; font-size: 14px">
+    <form id="myform" action="" method="get">
+        <table>
+            <tr>
+                <td>First name:</td>
+                <td style="width: 10px"></td>
+                <td>
+                    <input type="text" name="firstname" placeholder="Enter First Name"></td>
+            </tr>
+            <tr>
+                <td>Last name:</td>
+                <td style="width: 10px"></td>
+                <td>
+                    <input type="text" name="lastname" placeholder="Enter Last Name"></td>
+            </tr>
+            <tr>
+                <td colspan="3" style="height: 10px"></td>
+            </tr>
+            <tr>
+                <td colspan="3">
+                    <button type="button" onclick="pagePrint(myform)">Print</button>
+            </tr>
+        </table>
+    </form>
+    <script>
+        function pagePrint(myform){
+            var printdata=document.getElementById("myform");
+            newwin=window.open("");
+            newwin.document.write(printdata.outerHTML);
+            newwin.print();
+            newwin.close();
+        }
+    </script>
+</body>
+</html>
