@@ -3,39 +3,180 @@
 <head>
     <meta charset="utf-8" />
     <title>GP Note Form</title>
+    <link rel="stylesheet" type="text/css" href="assets\css\GPNote.css">
+    <link rel="stylesheet" type="text/css" href="assets\css\Footer.css">
+    <link rel="stylesheet" type="text/css" href="assets\css\Navbar.css">
+
+    <script src="assets/js/GPNote.js"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
 </head>
-<body style="font-family: 'Times New Roman'; font-size: 14px">
-    <form id="myform" action="" method="get">
-        <table>
-            <tr>
-                <td>First name:</td>
-                <td style="width: 10px"></td>
-                <td>
-                    <input type="text" name="firstname" placeholder="Enter First Name"></td>
-            </tr>
-            <tr>
-                <td>Last name:</td>
-                <td style="width: 10px"></td>
-                <td>
-                    <input type="text" name="lastname" placeholder="Enter Last Name"></td>
-            </tr>
-            <tr>
-                <td colspan="3" style="height: 10px"></td>
-            </tr>
-            <tr>
-                <td colspan="3">
-                    <button type="button" onclick="pagePrint(myform)">Print</button>
-            </tr>
-        </table>
-    </form>
-    <script>
-        function pagePrint(myform){
-            var printdata=document.getElementById("myform");
-            newwin=window.open("");
-            newwin.document.write(printdata.outerHTML);
-            newwin.print();
-            newwin.close();
-        }
-    </script>
+
+<body>
+<!-- Navbar Code -->
+    <header id="navbar">
+        <div id="navbarSections">
+            <div id="logo">
+                <h1 class="logoText" id="logoLine1">ECHO</h1>
+                <h2 class="logoText" id="logoLine2">Health</h2>
+            </div>
+            <div id="links">
+                <ul id="linkList">
+                    <li class="navElem"><a class="navLink" href=index.html>Home</a></li>
+                    <li class="navElem" id="dropdownLink1"><a class="navLink" href=index.html>Quick Fixes</a>
+                        <div id="dropdown1">
+                            <a href="#">Breathe</a>
+                            <a href="#">Hydrate</a>
+                            <a href="#">Move</a>
+                            <a href="#">Rest</a>
+                        </div>
+
+                    </li>
+                    <li class="navElem"><a class="navLink" href=index.html>Need Help</a></li>
+                    <li class="navElem"><a class="navLink" href=index.html>Counselling</a></li>
+                    <li class="navElem"><a class="navLink" href=index.html>24/7 Contacts</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+<!-- Navbar Code End-->
+
+<!-- Main Form Code Start -->
+    <div id="printableForm">
+        <form id="myform" action="" method="get">
+            <table>
+                <tr>
+                    <th>STATEMENTS</th>
+                    <th>None of the time</th>
+                    <th>Rarely</th>
+                    <th>Some of the time</th>
+                    <th>Often</th>
+                    <th>All of the time</th>
+                </tr>
+                <tr>
+                    <td>I've been feeling optimistic about the future</td>
+                    <td><input type="radio" name="optimistic" value="none"></td>
+                    <td><input type="radio" name="optimistic" value="rarely"></td>
+                    <td><input type="radio" name="optimistic" value="some"></td>
+                    <td><input type="radio" name="optimistic" value="often"></td>
+                    <td><input type="radio" name="optimistic" value="all"></td>
+                </tr>
+                <tr>
+                    <td>I've been feeling useful</td>
+                    <td><input type="radio" name="useful" value="none"></td>
+                    <td><input type="radio" name="useful" value="rarely"></td>
+                    <td><input type="radio"name="useful" value="some"></td>
+                    <td><input type="radio" name="useful" value="often"></td>
+                    <td><input type="radio" name="useful" value="all"></td>
+                </tr>
+                <tr>
+                    <td>I've been feeling relaxed</td>
+                    <td><input type="radio" name="relaxed" value="none"></td>
+                    <td><input type="radio" name="relaxed" value="rarely"></td>
+                    <td><input type="radio" name="relaxed" value="some"></td>
+                    <td><input type="radio" name="relaxed" value="often"></td>
+                    <td><input type="radio" name="relaxed" value="all"></td>
+                </tr>
+                <tr>
+                    <td>I've been dealing with problems well</td>
+                    <td><input type="radio" name="problems" value="none"></td>
+                    <td><input type="radio" name="problems" value="rarely"></td>
+                    <td><input type="radio" name="problems" value="some"></td>
+                    <td><input type="radio" name="problems" value="often"></td>
+                    <td><input type="radio" name="problems" value="all"></td>
+                </tr>
+                <tr>
+                    <td>I've been thinking clearly</td>
+                    <td><input type="radio" name="thinking" value="none"></td>
+                    <td><input type="radio" name="thinking" value="rarely"></td>
+                    <td><input type="radio" name="thinking" value="some"></td>
+                    <td><input type="radio" name="thinking" value="often"></td>
+                    <td><input type="radio" name="thinking" value="all"></td>
+                </tr>
+                <tr>
+                    <td>I've been feeling close to other people</td>
+                    <td><input type="radio" name="close" value="none"></td>
+                    <td><input type="radio" name="close" value="rarely"></td>
+                    <td><input type="radio" name="close" value="some"></td>
+                    <td><input type="radio" name="close" value="often"></td>
+                    <td><input type="radio" name="close" value="all"></td>
+                </tr>
+                <tr>
+                    <td>I've been able to make up my own mind about things</td>
+                    <td><input type="radio" name="mind" value="none"></td>
+                    <td><input type="radio" name="mind" value="rarely"></td>
+                    <td><input type="radio" name="mind" value="some"></td>
+                    <td><input type="radio" name="mind" value="often"></td>
+                    <td><input type="radio" name="mind" value="all"></td>
+                </tr>
+                <tr>
+                    <td colspan="6">I have been feeling like this for <select id="numWeeks" name="numWeeks"></select> weeks</td>
+                </tr>
+                <tr>
+                    <td><label for="suicideYN">I have been experiencing thoughts of suicide</label></td>
+                    <td colspan="5"><select id="suicideYN" name="suicideYN">
+                        <option value="sBlank"> </option>
+                        <option value="sYes">Yes</option>
+                        <option value="sNo">No</option>
+                        <option value="sUnsure">Unsure</option>
+                    </select></td>
+                </tr>
+                <tr>
+                    <td>Things I have tried to help me feel better: </td>
+                    <td colspan="5"><textarea oninput="autoResize(event)"></textarea></td>
+                </tr>
+                <tr>
+                    <td colspan="6">
+                        <button type="button" onclick="printPage()">Print</button>
+                </tr>
+            </table>
+        </form>
+    </div>
+
+<!-- Main Code End-->
+
+<!-- Footer Code Start -->
+    <footer id="main">
+        <h1 id="footer-title">Emergency Help</h1>
+        <div id="columns">
+            <div class="helpColumn">
+                <h1 class="helpTitle">RGU-Based Help</h1>
+                <ul class="helpPoints">
+                    <li class="helpPointElem"><a class="helpLink" href="https://www.rgu.ac.uk/life-at-rgu/support-advice-services/counselling-wellbeing" target=”_blank”>Counselling & Wellbeing</a>: 09:30 - 16:00 (Monday to Friday)</li>
+                    <li class="helpPointElem"><a class="helpLink"  href="https://rgu.nightline.ac.uk/" target=”_blank”>RGU Nightline</a>: 22:00 08:00 (7 days a week)</li>
+                    <li class="helpPointElem"><a class="helpLink"  href="https://www.rguunion.co.uk/support/peersupport/" target=”_blank”>Peer Support</a>: 09:00 - 17:00 (Monday to Friday)</li>
+                    <li class="helpPointElem"><a class="helpLink"  href="https://www.rgu.ac.uk/life-at-rgu/support-advice-services/student-life-hub" target=”_blank”>Student Life Support Directory</a></li>
+                </ul>
+            </div>
+
+            <div class="helpColumn">
+                <h1 class="helpTitle">External Help</h1>
+                <ul class="helpPoints">
+                    <li class="helpPointElem"><a class="helpLink"  href="https://www.samaritans.org/how-we-can-help/contact-samaritan/" target=”_blank”>Samaritans</a>: Call 116 123 or text 'Shout' to 85258</li>
+                    <li class="helpPointElem"><a class="helpLink"  href="https://www.breathingspace.scot/" target=”_blank”>Breathing Space</a>: Call 0800 838587
+                        <ul class="innerHelpPoints">
+                        <li>18:00 - 02:00 (Monday to Thursday)</li>
+                        <li>18:00 - 06:00 (Friday to Monday)</li>    
+                        </ul> 
+                    </li>
+                    <li class="helpPointElem"><a class="helpLink"  href="https://www.thecalmzone.net/" target=”_blank”>CALM</a>: Call 0800 585858 17:00 - 00:00 (7 Days a week)</li>
+                    <li class="helpPointElem"><a class="helpLink"  href="https://www.studentminds.org.uk/" target=”_blank”>Student Minds</a>: Tailored resources for students</li>
+                </ul>
+            </div>
+        </div>
+
+
+    </footer>
+    <div id="bookend">
+        <h4>Copyright 2024 | Echo Health</h4>
+        <div id="innerBookend">
+            <h4 class="innerBookendText">References</h4>
+            <h4 class="innerBookendText">Feedback</h4>
+        </div>
+    </div>
+<!-- Footer Code End-->
+
 </body>
 </html>
