@@ -21,7 +21,22 @@
 }
 
 #pageInfo {
-    margin-bottom: 5%;
+    position: relative;
+    text-align: center;
+}
+
+#pageInfo img{
+    width:100%;
+    height: 25em;
+    margin-bottom: 2%;
+    opacity: 0.6;
+}
+
+#centerInfoText {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
 /* table css */
