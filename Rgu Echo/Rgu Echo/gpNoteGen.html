@@ -53,105 +53,107 @@
 <!-- Navbar Code End-->
 
 <!-- Main Form Code Start -->
-    <div id="pageInfo">
-        <img src="assets/images/background/Students_Studying_4.jpg" alt="backgroundImage">
-        
-        <div id="centerInfoText">
-            <h1> GP Note Form</h1>
-            <p> Fill out the form and print it to hand to your GP to make things a little bit easier for you!</p>
-        </div>
-    </div>
+ <main>
+        <!-- Hero Header -->
+        <section >
+            <div class="hero">
+                <h1>GP Note Form</h1>
+            </div>
+        </section>
 
-    <div id="printableForm">
-        <form id="myform" action="" method="get">
-            <table>
-                <tr>
-                    <th>STATEMENTS</th>
-                    <th>None of the time</th>
-                    <th>Rarely</th>
-                    <th>Some of the time</th>
-                    <th>Often</th>
-                    <th>All of the time</th>
-                </tr>
-                <tr>
-                    <td>I've been feeling optimistic about the future</td>
-                    <td><input type="radio" name="optimistic" value="none"></td>
-                    <td><input type="radio" name="optimistic" value="rarely"></td>
-                    <td><input type="radio" name="optimistic" value="some"></td>
-                    <td><input type="radio" name="optimistic" value="often"></td>
-                    <td><input type="radio" name="optimistic" value="all"></td>
-                </tr>
-                <tr>
-                    <td>I've been feeling useful</td>
-                    <td><input type="radio" name="useful" value="none"></td>
-                    <td><input type="radio" name="useful" value="rarely"></td>
-                    <td><input type="radio"name="useful" value="some"></td>
-                    <td><input type="radio" name="useful" value="often"></td>
-                    <td><input type="radio" name="useful" value="all"></td>
-                </tr>
-                <tr>
-                    <td>I've been feeling relaxed</td>
-                    <td><input type="radio" name="relaxed" value="none"></td>
-                    <td><input type="radio" name="relaxed" value="rarely"></td>
-                    <td><input type="radio" name="relaxed" value="some"></td>
-                    <td><input type="radio" name="relaxed" value="often"></td>
-                    <td><input type="radio" name="relaxed" value="all"></td>
-                </tr>
-                <tr>
-                    <td>I've been dealing with problems well</td>
-                    <td><input type="radio" name="problems" value="none"></td>
-                    <td><input type="radio" name="problems" value="rarely"></td>
-                    <td><input type="radio" name="problems" value="some"></td>
-                    <td><input type="radio" name="problems" value="often"></td>
-                    <td><input type="radio" name="problems" value="all"></td>
-                </tr>
-                <tr>
-                    <td>I've been thinking clearly</td>
-                    <td><input type="radio" name="thinking" value="none"></td>
-                    <td><input type="radio" name="thinking" value="rarely"></td>
-                    <td><input type="radio" name="thinking" value="some"></td>
-                    <td><input type="radio" name="thinking" value="often"></td>
-                    <td><input type="radio" name="thinking" value="all"></td>
-                </tr>
-                <tr>
-                    <td>I've been feeling close to other people</td>
-                    <td><input type="radio" name="close" value="none"></td>
-                    <td><input type="radio" name="close" value="rarely"></td>
-                    <td><input type="radio" name="close" value="some"></td>
-                    <td><input type="radio" name="close" value="often"></td>
-                    <td><input type="radio" name="close" value="all"></td>
-                </tr>
-                <tr>
-                    <td>I've been able to make up my own mind about things</td>
-                    <td><input type="radio" name="mind" value="none"></td>
-                    <td><input type="radio" name="mind" value="rarely"></td>
-                    <td><input type="radio" name="mind" value="some"></td>
-                    <td><input type="radio" name="mind" value="often"></td>
-                    <td><input type="radio" name="mind" value="all"></td>
-                </tr>
-                <tr>
-                    <td colspan="6">I have been feeling like this for <select id="numWeeks" name="numWeeks"></select> weeks</td>
-                </tr>
-                <tr>
-                    <td><label for="suicideYN">I have been experiencing thoughts of suicide</label></td>
-                    <td colspan="5"><select id="suicideYN" name="suicideYN">
-                        <option value="sBlank"> </option>
-                        <option value="sYes">Yes</option>
-                        <option value="sNo">No</option>
-                        <option value="sUnsure">Unsure</option>
-                    </select></td>
-                </tr>
-                <tr>
-                    <td>Things I have tried to help me feel better: </td>
-                    <td colspan="5"><textarea oninput="autoResize(event)"></textarea></td>
-                </tr>
-                <tr>
-                    <td colspan="6">
-                        <button type="button" onclick="printPage()">Print</button>
-                </tr>
-            </table>
-        </form>
-    </div>
+        <section>
+            <div id="printableForm">
+                <form id="myform" action="" method="get">
+                    <table>
+                        <tr>
+                            <th>STATEMENTS</th>
+                            <th>None of the time</th>
+                            <th>Rarely</th>
+                            <th>Some of the time</th>
+                            <th>Often</th>
+                            <th>All of the time</th>
+                        </tr>
+                        <tr>
+                            <td>I've been feeling optimistic about the future</td>
+                            <td><input type="radio" name="optimistic" value="none"></td>
+                            <td><input type="radio" name="optimistic" value="rarely"></td>
+                            <td><input type="radio" name="optimistic" value="some"></td>
+                            <td><input type="radio" name="optimistic" value="often"></td>
+                            <td><input type="radio" name="optimistic" value="all"></td>
+                        </tr>
+                        <tr>
+                            <td>I've been feeling useful</td>
+                            <td><input type="radio" name="useful" value="none"></td>
+                            <td><input type="radio" name="useful" value="rarely"></td>
+                            <td><input type="radio"name="useful" value="some"></td>
+                            <td><input type="radio" name="useful" value="often"></td>
+                            <td><input type="radio" name="useful" value="all"></td>
+                        </tr>
+                        <tr>
+                            <td>I've been feeling relaxed</td>
+                            <td><input type="radio" name="relaxed" value="none"></td>
+                            <td><input type="radio" name="relaxed" value="rarely"></td>
+                            <td><input type="radio" name="relaxed" value="some"></td>
+                            <td><input type="radio" name="relaxed" value="often"></td>
+                            <td><input type="radio" name="relaxed" value="all"></td>
+                        </tr>
+                        <tr>
+                            <td>I've been dealing with problems well</td>
+                            <td><input type="radio" name="problems" value="none"></td>
+                            <td><input type="radio" name="problems" value="rarely"></td>
+                            <td><input type="radio" name="problems" value="some"></td>
+                            <td><input type="radio" name="problems" value="often"></td>
+                            <td><input type="radio" name="problems" value="all"></td>
+                        </tr>
+                        <tr>
+                            <td>I've been thinking clearly</td>
+                            <td><input type="radio" name="thinking" value="none"></td>
+                            <td><input type="radio" name="thinking" value="rarely"></td>
+                            <td><input type="radio" name="thinking" value="some"></td>
+                            <td><input type="radio" name="thinking" value="often"></td>
+                            <td><input type="radio" name="thinking" value="all"></td>
+                        </tr>
+                        <tr>
+                            <td>I've been feeling close to other people</td>
+                            <td><input type="radio" name="close" value="none"></td>
+                            <td><input type="radio" name="close" value="rarely"></td>
+                            <td><input type="radio" name="close" value="some"></td>
+                            <td><input type="radio" name="close" value="often"></td>
+                            <td><input type="radio" name="close" value="all"></td>
+                        </tr>
+                        <tr>
+                            <td>I've been able to make up my own mind about things</td>
+                            <td><input type="radio" name="mind" value="none"></td>
+                            <td><input type="radio" name="mind" value="rarely"></td>
+                            <td><input type="radio" name="mind" value="some"></td>
+                            <td><input type="radio" name="mind" value="often"></td>
+                            <td><input type="radio" name="mind" value="all"></td>
+                        </tr>
+                        <tr>
+                            <td colspan="6">I have been feeling like this for <select id="numWeeks" name="numWeeks"></select> weeks</td>
+                        </tr>
+                        <tr>
+                            <td><label for="suicideYN">I have been experiencing thoughts of suicide</label></td>
+                            <td colspan="5"><select id="suicideYN" name="suicideYN">
+                                <option value="sBlank"> </option>
+                                <option value="sYes">Yes</option>
+                                <option value="sNo">No</option>
+                                <option value="sUnsure">Unsure</option>
+                            </select></td>
+                        </tr>
+                        <tr>
+                            <td>Things I have tried to help me feel better: </td>
+                            <td colspan="5"><textarea oninput="autoResize(event)"></textarea></td>
+                        </tr>
+                        <tr>
+                            <td colspan="6">
+                                <button type="button" onclick="printPage()">Print</button>
+                        </tr>
+                    </table>
+                </form>
+            </div>
+        </section>
+    </main>
 
 <!-- Main Code End-->
 
