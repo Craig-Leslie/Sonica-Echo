@@ -8,7 +8,6 @@ body{
     background-image: url("../images/background/needHelp.jpg");
     background-repeat: no-repeat;
     background-size: cover;
-    margin-bottom: 2em;
     
 }
 .hero h1{
@@ -18,28 +17,5 @@ body{
     height: 70vh;
     font-size: 150px;
     color: #ffffff;
-    background: rgba(0, 0, 0, 0.3);
+    background: rgba(0, 0, 0, 0.3)
 }
-.helpCardSec{
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    flex-grow: 4;
-    gap: 300px;
-    justify-content: space-around;
-}
-.helpCard{
-    background-color: #A3D5D3; 
-    height: 300px; 
-    width: 300px; text-align: center; 
-    display: flex; 
-    justify-content: center;
-    align-items: center;
-}
-
-main a{
-    text-decoration: none;
-    color: inherit;
-}
-
-
