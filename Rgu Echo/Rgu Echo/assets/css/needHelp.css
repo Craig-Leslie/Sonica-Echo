@@ -33,4 +33,9 @@ body{
     width: 300px;
 }
 
+main a{
+    text-decoration: none;
+    color: inherit;
+}
+
 
