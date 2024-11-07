@@ -3,3 +3,58 @@
     height: 20%;
     object-fit: fill;
 }
+
+.hero{
+    height: 70vh;
+    background-image: url("../images/background/Students_Studying_1.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-bottom: 2em;
+    
+}
+.hero h1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 70vh;
+    font-size: 150px;
+    color: #ffffff;
+    background: rgba(0, 0, 0, 0.3);
+}
+
+.counsellingAndWellbeing{
+    width: 400px;
+    height: 400px;
+    padding: 20px 20px 20px 20px;
+    margin: 10px 10px 10px 10px;
+}
+
+#cNw{
+    width: 400px;
+    padding: 20px 20px 20px 20px;
+    margin: 10px 10px 10px 10px;
+    filter: drop-shadow(30px 10px 4px grey);
+}
+
+.rguNightline{
+    
+    width: 27%;
+    padding: 20px 20px 20px 20px;
+    margin: 10px 10px 10px 10px;
+}
+
+.peerSupport{
+    
+    width: 27%;
+    padding: 20px 20px 20px 20px;
+    margin: 10px 10px 10px 10px;
+}
+
+.counsellingAndWellbeingSection{
+    width: 100%;
+    margin: 10px 10px 10px 10px;
+    display: flex;
+    flex-direction: row;
+    font-size: 1.3em;
+    
+}
