@@ -1,3 +1,13 @@
+
+body{
+    margin: 0;
+    width: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+
+
 #banner{
     width: 100%;
     height: 20%;
@@ -22,39 +32,99 @@
     background: rgba(0, 0, 0, 0.3);
 }
 
-.counsellingAndWellbeing{
-    width: 400px;
-    height: 400px;
-    padding: 20px 20px 20px 20px;
-    margin: 10px 10px 10px 10px;
-}
-
+/* IMAGE */
 #cNw{
     width: 400px;
-    padding: 20px 20px 20px 20px;
-    margin: 10px 10px 10px 10px;
-    filter: drop-shadow(30px 10px 4px grey);
+    margin: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    border-radius: 0 10% 0 10%;
 }
 
+.counsellingAndWellbeing{
+    width: 50%;
+    padding: 20px;
+    margin: 10px;
+}
+
+.counsellingAndWellbeing h2{
+    color: #A3D5D3;
+    filter: drop-shadow(2px 2px 2px rgb(0, 0, 0, 0.1));
+    font-weight:bold;
+}
+
+
+
 .rguNightline{
-    
-    width: 27%;
-    padding: 20px 20px 20px 20px;
-    margin: 10px 10px 10px 10px;
+    width: 70%;
+    padding: 20px;
+    margin: 10px;
+}
+
+.rguNightline h2{
+    color: #A3D5D3;
+    filter: drop-shadow(2px 2px 2px rgb(0, 0, 0, 0.1));
+    font-weight:bold;
 }
 
 .peerSupport{
-    
-    width: 27%;
-    padding: 20px 20px 20px 20px;
-    margin: 10px 10px 10px 10px;
+    width: 50%;
+    padding: 20px;
+    margin: 10px;
+}
+
+.peerSupport h2{
+    color: #A3D5D3;
+    filter: drop-shadow(2px 2px 2px rgb(0, 0, 0, 0.1));
+    font-weight:bold;
 }
 
 .counsellingAndWellbeingSection{
-    width: 100%;
-    margin: 10px 10px 10px 10px;
+    width: 80%;
+    margin: 10px;
     display: flex;
     flex-direction: row;
     font-size: 1.3em;
-    
+    justify-content: space-between;
+}
+
+.rguNightlineSection{
+    width: 80%;
+    margin: 10px;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    display: flex;
+    flex-direction: row;
+    font-size: 1.3em;
+    justify-content: space-between;
+}
+
+.peerSupportSection{
+    width: 80%;
+    margin: 10px;
+    display: flex;
+    flex-direction: row;
+    font-size: 1.3em;
+    justify-content: space-between;
+}
+
+.mainContent{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.btn{
+    padding: 20px 16px;
+}
+
+button{
+    background-color: #A3D5D3;
+    padding: 10px;
+    border: none;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    color: #ffffff;
+    cursor:pointer;
+    transition: 0.3s;
+    text-align: center;
 }
