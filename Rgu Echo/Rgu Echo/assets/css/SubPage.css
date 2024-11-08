@@ -6,16 +6,19 @@
     display: flex;
     justify-content: space-between;
     width: 100%;
-    background-color:azure;
 }
 
 .left{
-    
-    background-color: blue;
     width: 70%;
 }
 
 .right{
-    background-color: red;
     width: 30%;
+}
+
+.linkContainer{
+    display: flex;
+    flex-direction: column;
+    width:25%;
+    margin-left: 5%;
 }
