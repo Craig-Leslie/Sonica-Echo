@@ -1,7 +1,9 @@
+/* Banner image */
 .hero{
     background-image: url("../images/background/needHelp.jpg");
 }
 
+/*Content Divs*/
 .contentContainer{
     display: flex;
     justify-content: space-between;
@@ -29,4 +31,18 @@
     width:25%;
     margin-left: 15%;
     margin-top: 5%;
+}
+
+/*Image*/
+.imgdesign{
+    width: 400px;
+    margin: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    border-radius: 0 10% 0 10%;
+}
+
+main h1{
+    color: #A3D5D3;
+    filter: drop-shadow(2px 2px 2px rgb(0, 0, 0, 0.1));
+    font-weight:bold;
 }
