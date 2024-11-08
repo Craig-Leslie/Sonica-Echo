@@ -15,21 +15,7 @@ body{
 }
 
 .hero{
-    height: 70vh;
     background-image: url("../images/background/Students_Studying_1.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    margin-bottom: 2em;
-    
-}
-.hero h1{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 70vh;
-    font-size: 150px;
-    color: #ffffff;
-    background: rgba(0, 0, 0, 0.3);
 }
 
 /* IMAGE */
