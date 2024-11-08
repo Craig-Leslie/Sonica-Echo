@@ -12,7 +12,8 @@
 .helpCard{
     background-color: #A3D5D3; 
     height: 300px; 
-    width: 300px; text-align: center; 
+    width: 300px; 
+    text-align: center; 
     display: flex; 
     justify-content: center;
     align-items: center;

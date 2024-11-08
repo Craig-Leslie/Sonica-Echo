@@ -1,3 +1,21 @@
 .hero{
     background-image: url("../images/background/needHelp.jpg");
 }
+
+.contentContainer{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    background-color:azure;
+}
+
+.left{
+    
+    background-color: blue;
+    width: 70%;
+}
+
+.right{
+    background-color: red;
+    width: 30%;
+}
