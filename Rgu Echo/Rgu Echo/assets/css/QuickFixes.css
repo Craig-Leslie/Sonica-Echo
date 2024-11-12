@@ -1,3 +1,28 @@
+#popupFullscreen{
+    display: none;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(90, 90, 90, 0.5);
+    z-index: 100;
+}
+
+#popupDiv{
+    position: fixed;
+    left: 50%;
+    transform: translate(-50%, 0);
+    width:70%;
+    height: auto;
+    margin: auto;
+    background-color: red;
+    display: none;
+    top: 10%;
+    z-index: 101;
+}
+
+
 
 #fixes{
     display: grid; 
@@ -26,8 +51,15 @@
     transition: transform .2s;
 }
 
+.quickFixAnchor{
+    position: absolute;
+    height:inherit;
+    width: 18.75%;
+    text-decoration: none;
+}
+
 .quickFix:hover{
-    transform: scale(1.05);
+    scale: (1.01);
     cursor: pointer;
 }
 
@@ -35,12 +67,12 @@
 
 .fixTitle{
     margin: 0px;
-    font-size: 2em;
+    font-size: calc(0.75vw + 0.75vh);
 }
 
 .fixDescription{
     font-weight: 100;
-    font-size: 1.3em;
+    font-size: calc(0.75vw + 0.75vh);
 }
 
 #breathe{
