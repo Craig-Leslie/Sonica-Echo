@@ -1,3 +1,7 @@
+#introText{
+    text-align: center;
+}
+
 #popupFullscreen{
     display: none;
     position: fixed;
@@ -39,10 +43,12 @@
     cursor: pointer;
 }
 
-#breatheContent{
+.fixContent{
     display: flex;
-    flex-direction: row;
+    flex-direction: row;   
 }
+
+
 
 #breatheSec1{
     max-width: 75%;
@@ -50,6 +56,47 @@
 
 #breathingGif{
     width:100%
+}
+
+
+
+#hydrateSec1{
+    max-width: 50%;
+}
+
+#hydrateSec2{
+    width: 50%;
+    height: 100%;
+
+}
+
+#hydrateVideo{
+    margin: auto;
+    display: block;
+}
+
+#moveSec1{
+    max-width: 50%;
+
+}
+
+#moveSec2{
+    max-width: 50%;
+}
+
+#restSec1{
+    max-width: 50%; 
+}
+
+#restSec2{
+    width: 50%;
+    height: 100%;
+
+}
+
+#restVideo{
+    margin: auto;
+    display: block;
 }
 
 #fixes{
@@ -74,9 +121,12 @@
     border-style: solid;
     border-color: #A3D5D3;
     background-color: #cde2e1;
-    height: 300px;
-    width: 75%;
+    height: 250px;
+    width: 50%;
     transition: transform .2s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .quickFixAnchor{
@@ -87,7 +137,6 @@
 }
 
 .quickFix:hover{
-    scale: (1.01);
     cursor: pointer;
 }
 
@@ -96,6 +145,8 @@
 .fixTitle{
     margin: 0px;
     font-size: calc(0.75vw + 0.75vh);
+    text-align: center;
+    
 }
 
 .fixDescription{
