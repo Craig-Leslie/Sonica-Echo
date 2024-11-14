@@ -117,7 +117,6 @@ document.addEventListener('DOMContentLoaded', function() {
             popupDiv.style.display = "none";  
         }
 
-        document.addEventListener('click', closePopupFuncCheck);
         var closePopupButton = document.getElementById("closePopup");
         closePopupButton.addEventListener('click', closePopupFunc);
         popupFullscreen.style.display = "block";

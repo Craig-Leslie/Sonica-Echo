@@ -1,8 +1,8 @@
 #helpButton{
     background-color: #A3D5D3; 
-    width: 100px; 
+    width: 95px; 
     position: fixed;
-    left: 80%; 
+    left: 90%; 
     top:5%;
     text-align: center;
     vertical-align: middle;
@@ -21,6 +21,6 @@
 
 #helpText{
     color: white;
-    font-size: 0.75;
+    font-size: 1.25em;
 
 }
