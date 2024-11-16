@@ -117,7 +117,7 @@ body{
     padding: 20px 16px;
 }
 
-button{
+.mainContent button{
     background-color: #A3D5D3;
     padding: 10px;
     border: none;
@@ -128,3 +128,25 @@ button{
     transition: 0.3s;
     text-align: center;
 }
+
+.extraInfobtn{
+    background-color: #A3D5D3;
+    padding: 10px;
+    border: none;
+    border-radius: 20px;
+    color: #ffffff;
+    cursor:pointer;
+    transition: 0.3s;
+    text-align: center;
+    width: 400px;
+    height: 80px;
+    margin: 0px 300px 0px 300px;
+}
+
+.extraInfo{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+
