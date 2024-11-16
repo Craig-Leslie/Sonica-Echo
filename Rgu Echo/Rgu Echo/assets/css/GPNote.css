@@ -14,21 +14,9 @@
 }
 
 .hero{
-    height: 70vh;
     background-image: url("../images/background/Students_Studying_4.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    
 }
-.hero h1{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 70vh;
-    font-size: 150px;
-    color: #ffffff;
-    background: rgba(0, 0, 0, 0.3)
-}
+
 
 #printableForm {
     display: flex;

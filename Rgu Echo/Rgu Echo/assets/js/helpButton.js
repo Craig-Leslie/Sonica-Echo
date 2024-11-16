@@ -1,7 +1,6 @@
 document.addEventListener('DOMContentLoaded', function() {
 
     function scroll(){
-        console.log("test");
         document.getElementById("footerMain").classList.add("borderChange")
 
         document.getElementById("footerMain").scrollIntoView({behavior:"smooth"})

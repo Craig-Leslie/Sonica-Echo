@@ -77,3 +77,39 @@
         transform: scaleY(1)
     }
 }
+
+
+/* Image-Title Banner CSS and CODE and Generalised body code */
+body{
+    margin: 0;
+    width: 100%;
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.hero{
+    height: 70vh;
+    /*background-image: url("../images/background/needHelp.jpg"); CHANGE IMAGE IN PAGE CSS FOR DIFFERENT IMAGE*/
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-bottom: 2em;
+    
+}
+.hero h1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 70vh;
+    font-size: 150px;
+    color: #ffffff;
+    background: rgba(0, 0, 0, 0.3);
+}
+
+/* HTML CODE FOR BANNER IMAGE */
+/*
+<!-- Hero Header -->
+        <section >
+            <div class="hero">
+                <h1>GP Note Form</h1>
+            </div>
+        </section>
+
+*/
